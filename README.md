@@ -3,11 +3,16 @@
 Problem Statement: To help users find grooming services near them which are in their budget and accessible to them. 
 
 Roles: 
+
 Admin: Will be able to CRUD user details and update shop specifics.
+
 Anonymous user: Can view listings with ratings and reviews but cannot give a review or rating.
+
 Logged in user
 i) General : Can view listings with ratings and reviews and can also give a review or rating.
+
 ii) Verified Reviewer : Their rating are given higher weightage and their comments are posted on the top.
+
 iii) Salon Owner: Can upload a new shop opening with details asked and get updates on posting.
 
 Target audience:
