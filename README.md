@@ -17,7 +17,7 @@ ii) Verified Reviewer : Their rating are given higher weightage and their commen
 
 iii) Salon Owner: Can upload a new shop opening with details asked and get updates on posting.
 
-Target audience:
+Target audience: The project aims at fulfiling the needs of people of all gender looking for beauty services.
 
 Solution proposal:  The web solution proposed would give a list of salons near the user based on the rating of the salon and the distance from the user. The users can also find salons based on the services they are looking for. The users have the option to sort the salons as per the cost of services they offer.
 
