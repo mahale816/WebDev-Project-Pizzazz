@@ -1,5 +1,7 @@
 "# WebDev-Project-Pizzazz" 
 
+This project is a part of course CS 5610: Web-development 
+
 Problem Statement: To help users find grooming services near them which are in their budget and accessible to them. 
 
 Roles: 
