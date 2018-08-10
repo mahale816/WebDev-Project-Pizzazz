@@ -1,12 +1,11 @@
 package pizzazz.repositories;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.springframework.data.repository.CrudRepository;
 
-@Entity
-public class ReviewRepository {
+import pizzazz.models.Review;
+
+
+public interface ReviewRepository extends CrudRepository<Review, Integer>{
 	
 
 }

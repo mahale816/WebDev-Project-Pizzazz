@@ -1,13 +1,9 @@
 package pizzazz.repositories;
 
-import java.util.List;
+import org.springframework.data.repository.CrudRepository;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import pizzazz.models.Service;
 
-@Entity
-public class ServiceRepository {
+public interface ServiceRepository extends CrudRepository<Service, Integer>{
 
 }

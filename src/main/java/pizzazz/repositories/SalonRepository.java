@@ -1,15 +1,10 @@
 package pizzazz.repositories;
 
-import java.util.List;
-import java.util.Map;
+import org.springframework.data.repository.CrudRepository;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import pizzazz.models.Salon;
 
-@Entity
-public class SalonRepository {
+public interface SalonRepository extends CrudRepository<Salon, Integer>{
 	
 
 }
