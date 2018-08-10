@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Customer {
@@ -23,9 +24,15 @@ public class Customer {
 	private String phone;
 	private Date dateOfBirth;
 	private String address;
+	
+	@OneToMany(mappedBy="course")
 	private List<Customer> follows;
+	
+	@OneToMany(mappedBy="course")
 	private List<Salon> likes;
 	
+	@OneToMany(mappedBy="course")
+	private List<Appointment> appointments;
 	
 	public List<Customer> getFollows() {
 		return follows;
