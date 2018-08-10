@@ -1,5 +1,6 @@
 package pizzazz.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -66,20 +67,19 @@ public class SalonService {
 		return null;
 	}
 
-	@GetMapping("/api/username/{userName}")
-	public Iterable<Customer> findUserByUsername(@PathVariable("userName") String username) {
-		return repository.findCustomerByUsername(username);
-	}
-
 
 	@GetMapping("/api/{keyWord}/salon")
-	public Salon findSalonByKeyWord(@PathVariable ("keyWord") String salonId) {
+	public List<Salon> findSalonByKeyWord(@PathVariable ("keyWord") String key) {
 		List<Salon> data = (List<Salon>) repository.findAll();
-		List<>
-		if (data.isPresent()) {
-			return data.get();
+		List<Salon> result = new ArrayList<Salon>();
+		for(Salon ss : data) {
+			if(ss.getName().contains(key)
+					|| ss.getCity().contains(key)
+					|| ss.getAddress().contains(key)) {
+				result.add(ss);
+			}
 		}
-		return null;
+		return result;
 	}
 
 }
